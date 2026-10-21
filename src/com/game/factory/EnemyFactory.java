@@ -6,8 +6,9 @@ public class EnemyFactory {
         if (tipo.equalsIgnoreCase("comum")) {
             return new InimigoComum();
         } else if (tipo.equalsIgnoreCase("rapido")) {
-            // Você pode criar InimigoRapido depois
-            return new InimigoComum(); 
+            return new InimigoRapido();
+        } else if (tipo.equalsIgnoreCase("tanque")) {
+            return new InimigoTanque();
         }
         throw new IllegalArgumentException("Tipo de inimigo desconhecido: " + tipo);
     }
