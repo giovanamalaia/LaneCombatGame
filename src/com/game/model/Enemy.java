@@ -17,4 +17,8 @@ public abstract class Enemy {
     }
 
     public double getPosicao() { return posicao; }
+
+    public int getVida() { return vida; }
+
+    public int getDano() { return dano; }
 }
